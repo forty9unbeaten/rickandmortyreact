@@ -17,8 +17,13 @@
         "polyfills": "apps/rick-and-morty/src/polyfills.ts",
         "tsConfig": "apps/rick-and-morty/tsconfig.app.json",
         "assets": [
-          "apps/rick-and-morty/src/favicon.ico",
-          "apps/rick-and-morty/src/assets"
+          "apps/rick-and-morty/src/portal.png",
+          "apps/rick-and-morty/src/assets",
+          {
+            "glob": "**/*.css",
+            "input": "libs/styles/src/lib/",
+            "output": "assets/styles/"
+          }
         ],
         "styles": ["apps/rick-and-morty/src/styles.css"],
         "scripts": [],
